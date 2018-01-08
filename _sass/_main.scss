@@ -1,10 +1,11 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: black;
+  background-color: black;
   color: white;
 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -12,12 +13,24 @@ h1 {
   text-align: center;
 
   font-size: 72px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p, img {
+  display: block;
+  margin: 3em auto;
+  max-width: 600px;
 }
 
 p {
-  margin: 0.6em auto;
-  max-width: 600px;
   letter-spacing: 0.025em;
+  line-height: 1.4;
 }
 
 .kern-wa {
@@ -25,11 +38,11 @@ p {
 }
 
 .kern-av {
-  margin-right: -0.115em;
+  margin-right: -0.11em;
 }
 
 .kern-fa {
-  margin-right: -0.07em;
+  margin-right: -0.08em;
 }
 
 .kern-nf {
@@ -61,8 +74,76 @@ p {
   }
 }
 
+
+.color-indigo {
+  background-color: #4332CF !important;
+}
+.color-white {
+  background-color: white !important;
+  color: black;
+}
+.color-blue {
+  background-color: #2F8FED !important;
+}
+.color-green {
+  background-color: #4DCF42 !important;
+}
+.color-violet {
+  background-color: #7A4EAB !important;
+}
+.color-yellow {
+  background-color: #FAEB33 !important;
+}
+.color-red {
+  background-color: #F2293A !important;
+}
+.color-black {
+  background-color: black;
+}
+
+.trigger-color {
+  position: absolute;
+  pointer-events: none;
+  height: 90px;
+  &.t0 {
+    top: 0;
+  }
+  &.t1 {
+    top: 10%;
+  }
+  &.t2 {
+    top: 20%;
+  }
+  &.t3 {
+    top: 30%;
+  }
+  &.t4 {
+    top: 40%;
+  }
+  &.t5 {
+    top: 50%;
+  }
+  &.t6 {
+    top: 60%;
+  }
+  &.t7 {
+    top: 70%;
+  }
+  &.t8 {
+    top: 80%;
+  }
+  &.t9 {
+    top: 90%;
+  }
+}
+
 .main-sections {
   position: relative;
   z-index: 999;
-  background: black;
+  background-color: black;
+  transition: background-color 5s linear, color 5s linear;
+
+  .section {
+    padding: 60px;
+  }
 }
