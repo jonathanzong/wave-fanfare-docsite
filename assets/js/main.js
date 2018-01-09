@@ -34,13 +34,17 @@ $(window).scroll(function() {
 
     if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
 
-      // Remove all classes on body with color-
-      $body.removeClass(function (index, css) {
-        return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-      });
+      var targetClass = 'color-' + $(this).data('color');
 
-      // Add class of currently active div
-      $body.addClass('color-' + $(this).data('color'));
+      if (!$body.hasClass(targetClass)) {
+        // Remove all classes on body with color-
+        $body.removeClass(function (index, css) {
+          return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+        });
+
+        // Add class of currently active div
+        $body.addClass('color-' + $(this).data('color'));
+      }
     }
   });
 

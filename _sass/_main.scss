@@ -74,7 +74,6 @@ p {
   margin-right: -0.02em;
 }
 
-
 .section {
   min-height: 100vh;
 }
@@ -94,7 +93,6 @@ p {
     padding: 60px;
   }
 }
-
 
 .color-indigo {
   background-color: #4332CF !important;
@@ -161,7 +159,8 @@ p {
 
 .main-sections {
   position: relative;
-  z-index: 999;
+  display: inline-block;
+  width: 100vw;
   background-color: black;
   transition: background-color 5s linear, color 2.5s linear;
 
