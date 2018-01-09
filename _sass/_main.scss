@@ -8,35 +8,37 @@ html, body {
   font-weight: 400;
 }
 
-h1 {
-  text-transform: uppercase;
-  text-align: center;
+.container {
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
 
-  font-size: 72px;
-  font-weight: 600;
-  margin-bottom: 60px;
-}
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
 
-h3 {
-  text-transform: uppercase;
-  font-weight: 600;
-  max-width: 600px;
-  margin: 0 auto;
-}
+  h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-h3 + p {
-  margin-top: 1em;
-}
+  h3 + p {
+    margin-top: 1em;
+  }
 
-p, img {
-  display: block;
-  margin: 3em auto;
-  max-width: 600px;
-}
+  p, img {
+    display: block;
+    margin: 3em auto;
+    max-width: 600px;
+  }
 
-p {
-  letter-spacing: 0.025em;
-  line-height: 1.4;
+  p {
+    letter-spacing: 0.025em;
+    line-height: 1.4;
+  }
 }
 
 .pdfobject-container {

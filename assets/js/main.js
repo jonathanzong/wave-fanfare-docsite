@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   $carousel.on( 'staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
-    console.log('lightbox');
+    $.featherlight($(cellElement).children('img').attr('src'));
   });
 });
 
