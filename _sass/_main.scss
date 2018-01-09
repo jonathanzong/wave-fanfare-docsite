@@ -170,6 +170,17 @@ html, body {
   background-color: black;
   transition: background-color 5s linear, color 2.5s linear;
 
+  .main-sections__content {
+    position: relative;
+    z-index: 999;
+
+    pointer-events: none;
+
+    img, .pdfobject-container, .main-carousel {
+      pointer-events: all;
+    }
+  }
+
   .section {
     padding: 60px 15px;
   }
@@ -179,13 +190,35 @@ html, body {
   cursor: pointer;
   margin: 0 !important;
   position: absolute;
-  top: 15px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.15s linear;
 
   &.show {
+    opacity: 1;
+  }
+}
+
+.interactive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.plinth {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  box-shadow: 0 0 10px 5px white;
+  opacity: 0;
+  transition: opacity 1s ease;
+  &:hover {
     opacity: 1;
   }
 }
