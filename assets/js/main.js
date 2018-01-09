@@ -1,5 +1,19 @@
 $(document).ready(function() {
   $('.main-sections').css('margin-top', $(window).height() - 60);
+
+  PDFObject.embed("/assets/pdf/WaveFanfare_2017_Snyder_score.pdf", "#score-pdf", {
+    fallbackLink: "<p>The score for the performance can be viewed <a href='/assets/pdf/WaveFanfare_2017_Snyder_score.pdf'>by clicking here</a>.</p>"
+  });
+
+  var $carousel = $('.main-carousel').flickity({
+    freeScroll: false,
+    pageDots: false,
+    prevNextButtons: false
+  });
+
+  $carousel.on( 'staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
+    console.log('lightbox');
+  });
 });
 
 $(window).scroll(function() {
@@ -31,3 +45,5 @@ $(window).scroll(function() {
   });
 
 }).scroll();
+
+

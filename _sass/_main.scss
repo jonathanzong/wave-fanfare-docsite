@@ -20,6 +20,12 @@ h1 {
 h3 {
   text-transform: uppercase;
   font-weight: 600;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h3 + p {
+  margin-top: 1em;
 }
 
 p, img {
@@ -31,6 +37,21 @@ p, img {
 p {
   letter-spacing: 0.025em;
   line-height: 1.4;
+}
+
+.pdfobject-container {
+  max-width: 600px;
+  margin: 3em auto;
+  height: calc(100vh - 100px);
+}
+
+.main-carousel {
+  width: 100%;
+
+  .carousel-cell {
+    max-width: 600px;
+    margin: 0 30px;
+  }
 }
 
 .kern-wa {
@@ -93,6 +114,7 @@ p {
 }
 .color-yellow {
   background-color: #FAEB33 !important;
+  color: black;
 }
 .color-red {
   background-color: #F2293A !important;
@@ -141,9 +163,9 @@ p {
   position: relative;
   z-index: 999;
   background-color: black;
-  transition: background-color 5s linear, color 5s linear;
+  transition: background-color 5s linear, color 2.5s linear;
 
   .section {
-    padding: 60px;
+    padding: 60px 0;
   }
 }
