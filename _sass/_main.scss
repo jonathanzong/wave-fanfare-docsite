@@ -217,7 +217,7 @@ html, body {
   background-color: white;
   box-shadow: 0 0 10px 5px white;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 1s ease-out;
   &:hover {
     opacity: 1;
   }
