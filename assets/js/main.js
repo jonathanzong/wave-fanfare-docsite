@@ -7,10 +7,6 @@ $(document).ready(function() {
     $('.main-sections').css('margin-top', topmargin);
   });
 
-  PDFObject.embed("/assets/pdf/WaveFanfare_2017_Snyder_score.pdf", "#score-pdf", {
-    fallbackLink: "<p>The score for the performance can be viewed <a href='/assets/pdf/WaveFanfare_2017_Snyder_score.pdf'>by clicking here</a>.</p>"
-  });
-
   var $carousel = $('.main-carousel').flickity({
     freeScroll: false,
     pageDots: false,
