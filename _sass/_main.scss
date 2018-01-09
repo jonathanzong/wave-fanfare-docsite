@@ -41,18 +41,19 @@ html, body {
     letter-spacing: 0.025em;
     line-height: 1.4;
   }
+
+  a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      font-style: italic;
+    }
+  }
 }
 
-#score-pdf {
-  text-align: center;
-}
-
-.pdfobject-container {
-  max-width: 100%;
-  width: 600px;
-  margin: 3em auto;
-  height: calc(90vh - 120px);
-}
 
 .main-carousel {
   width: 100%;
@@ -193,7 +194,7 @@ html, body {
   width: 100vw;
   overflow-x: hidden;
   background-color: black;
-  transition: background-color 5s linear, color 2.5s linear;
+  transition: background-color 2.5s linear, color 1.2s linear;
 
   .main-sections__content {
     position: relative;
@@ -201,7 +202,7 @@ html, body {
 
     pointer-events: none;
 
-    img, .pdfobject-container, .main-carousel {
+    img, a, .main-carousel {
       pointer-events: all;
     }
   }

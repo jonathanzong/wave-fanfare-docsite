@@ -10,7 +10,8 @@ $(document).ready(function() {
   var $carousel = $('.main-carousel').flickity({
     freeScroll: false,
     pageDots: false,
-    prevNextButtons: false
+    prevNextButtons: false,
+    imagesLoaded: true
   });
 
   $carousel.on( 'staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
