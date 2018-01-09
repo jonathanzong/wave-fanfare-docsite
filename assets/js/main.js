@@ -14,9 +14,14 @@ $(document).ready(function() {
   $carousel.on( 'staticClick.flickity', function( event, pointer, cellElement, cellIndex ) {
     $.featherlight($(cellElement).children('img').attr('src'));
   });
+
+  $('.down-arrow').click(function() {
+    $("html, body").animate({ scrollTop: $('.main-sections').css('margin-top') }, 500);
+  })
 });
 
 $(window).scroll(function() {
+
   // selectors
   var $window = $(window),
       $body = $('.main-sections'),
@@ -24,6 +29,13 @@ $(window).scroll(function() {
 
   // Change 33% earlier than scroll position so colour is there when you arrive.
   var scroll = $window.scrollTop()// + ($window.height() / 3);
+
+  if (scroll > 10) {
+    $('.down-arrow').removeClass('show');
+  }
+  else {
+    $('.down-arrow').addClass('show');
+  }
 
   $panel.each(function () {
     var $this = $(this);

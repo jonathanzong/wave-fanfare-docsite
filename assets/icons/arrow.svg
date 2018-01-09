@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="38px" viewBox="0 0 61 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Group">
+        <path d="M0,1 L22.9314731,23.9314731" id="Line" stroke="white" stroke-width="5" transform="translate(10, 1)"></path>
+        <path d="M23.5685269,0.5 L46.5,23.4314731" id="Line" transform="translate(35.034263, 11.965737) scale(-1, 1) translate(-42.034263, -10.965737) " stroke="white"  stroke-width="5"></path>
+    </g>
+</svg>

@@ -9,6 +9,8 @@ html, body {
 }
 
 .container {
+  max-width: 100%;
+
   h1 {
     text-transform: uppercase;
     text-align: center;
@@ -42,9 +44,10 @@ html, body {
 }
 
 .pdfobject-container {
-  max-width: 600px;
+  max-width: 100%;
+  width: 600px;
   margin: 3em auto;
-  height: calc(100vh - 100px);
+  height: calc(90vh - 120px);
 }
 
 .main-carousel {
@@ -163,10 +166,26 @@ html, body {
   position: relative;
   display: inline-block;
   width: 100vw;
+  overflow-x: hidden;
   background-color: black;
   transition: background-color 5s linear, color 2.5s linear;
 
   .section {
-    padding: 60px 0;
+    padding: 60px 15px;
+  }
+}
+
+.down-arrow {
+  cursor: pointer;
+  margin: 0 !important;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.15s linear;
+
+  &.show {
+    opacity: 1;
   }
 }
